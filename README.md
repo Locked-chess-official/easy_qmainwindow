@@ -5,7 +5,7 @@ EasyMainWindow 是一个简化版的 `QMainWindow` 类，旨在提供更简单�
 ## 前置条件
 
 - Python 3.6 或更高版本
-- PyQt5 或 PySide2
+- PyQt5、PySide2、PyQt6、PySide6
 
 ## 安装
 
@@ -57,7 +57,7 @@ EasyMainWindow is a simplified version of the `QMainWindow` class, designed to p
 ## Prerequisites
 
 - Python 3.6 or higher
-- PyQt5 or PySide2
+- PyQt5, PySide2, PyQt6, PySide6
 
 ## Installation
 
