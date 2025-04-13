@@ -48,4 +48,57 @@ python setup.py sdist bdist_wheel
 
 ## 注意
 
-请确保在使用本项目时遵守所有相关的法律法规和版权协议。# easy_qmainwindow
+请确保在使用本项目时遵守所有相关的法律法规和版权协议。
+
+# EasyMainWindow English Documentation
+
+EasyMainWindow is a simplified version of the `QMainWindow` class, designed to provide a simpler API for creating and managing window widgets. It allows users to add various widgets through simple function calls and automatically handles the positioning and resizing of widgets.
+
+## Prerequisites
+
+- Python 3.6 or higher
+- PyQt5 or PySide2
+
+## Installation
+
+You can install it using the following command:
+
+```bash
+pip install easy_qmainwindow
+```
+
+## Usage
+
+First, ensure that you have installed `PyQt5` or `PySide2`. Then, you can use the `EasyMainWindow` class to create and manage your window.
+
+```python
+from easy_qmainwindow import EasyMainWindow
+
+def on_button_click():
+    print("Button clicked!")
+
+app = EasyMainWindow("My Easy Window")
+app.add_button("my_button", "Click Me", connect_func=on_button_click)
+app.show()
+```
+
+## Build Method
+
+The project uses `setuptools` for packaging. You can build the project using the following command:
+
+```bash
+python setup.py sdist bdist_wheel
+```
+
+## License
+
+This project is licensed under the MIT License. Please check the `LICENSE` file for more information.
+
+## Contribution
+
+If you have any suggestions for improvement or want to contribute code, please feel free to submit a Pull Request or create an Issue.
+
+## Note
+
+Please ensure that you comply with all relevant laws and regulations and copyright agreements when using this project.
+
