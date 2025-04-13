@@ -4,7 +4,7 @@ setup(
     name='easy_qmainwindow',
     version='0.0.1',
     description='A simple PyQt5 wrapper for QMainWindow',
-    author='HuangHaoHua',
+    author='Locked-chess-official',
     author_email='13140752715@163.com',
     url='https://github.com/Locked-chess-official/easy_qmainwindow',
     packages=['easy_qmainwindow'],
