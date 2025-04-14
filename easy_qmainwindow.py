@@ -34,12 +34,16 @@ from typing import TypeVar, Callable
 T = TypeVar('T', bound=QWidget)
 
 class EasyMainWindow(QMainWindow):
-    def __init__(self, title="Easy Window", show_full_screen=False, width=800, height=600):
+    def __init__(self, title="Easy Window", show_full_screen=False, width=None, height=None):
         super().__init__()
         self.setWindowTitle(title)
         if show_full_screen:
+            if width or height:
+                raise ValueError("cannot set the width or height if set the window full screen")
             self.showFullScreen()
         else:
+            width = 800
+            height = 600
             self.resize(width, height)
         # 主中心部件和布局  The main central widget and layout
         self.central_widget = QWidget()
